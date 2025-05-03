@@ -1,1 +1,11 @@
 This project presents a web-based control system for a mobile robot powered by Raspberry Pi 5. The robot can be remotely operated via a simple website interface or switched into an autonomous Line Follower mode. The goal of this project is to develop a dual-mode control system that enhances both manual and automated navigation for small robotic vehicles. The remote mode allows users to control movement using directional buttons, while the Line Follower mode uses infrared sensors to autonomously follow a predefined path. The robot's motors and sensors are controlled through GPIO pins, and the interface is built using Flask. This system demonstrates flexibility in robotic control and can be used for educational, experimental, or automation purposes. The final result is a stable and responsive control system with smooth switching between modes.
+
+File Descriptions
+app.py – Main Flask server that hosts the web interface and handles mode switching and movement commands.
+
+motor_control.py – Contains basic motor control functions (forward, backward, left, right, stop) for remote mode.
+
+line_follower.py – Implements logic for line-following mode using IR sensor input and motor control.
+
+templates/index.html – Web interface allowing users to control the car and switch between modes.
+
